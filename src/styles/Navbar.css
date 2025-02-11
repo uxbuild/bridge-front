@@ -1,0 +1,33 @@
+/* Navbar Container */
+.navbar {
+  background-color: #333; /* Dark background */
+  color: white; /* White text */
+  padding: 15px 20px; /* Padding for spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Center Title */
+.navbar-title {
+  text-align: center;
+  flex-grow: 1; /* Ensures it takes available space */
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  gap: 15px; /* Space between links */
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.navbar-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}

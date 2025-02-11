@@ -11,8 +11,8 @@ Developed with Vite, React, React Redux, RTK Query.
 - /users/:id
 
 ## requirements: overview
-- user can register
-- user can login
+- user can register (email, first, last, password)
+- user can login (email, password)
 - user can view list of users (protected)
 - user can edit user details (protected)
 - user can delete user (protected, not self).
