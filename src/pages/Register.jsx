@@ -50,11 +50,10 @@ const Register = () => {
     try {
       const response = await register(formData).unwrap();
       
-      // ✅ Store the token and user data in Redux
+      // store token and user data (redux)..
       dispatch(setUser({ token: response.token, user: response.user }));
-      
       toast.success("Registration successful!");
-      navigate("/users/"); // ✅ Redirect to /users/ after success
+      navigate("/users/"); // go to users page
     } catch (error) {
       toast.error(error?.data?.message || "Registration failed");
     }
